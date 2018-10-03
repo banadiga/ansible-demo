@@ -1,0 +1,7 @@
+---
+public: &public
+  name: perto
+  age: 23
+private:
+  <<: *public
+  id: 123-4567-890

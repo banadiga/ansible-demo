@@ -1,0 +1,10 @@
+---
+user:
+  string1: 'String'
+  string2: "String too"
+  number: 23
+  float1: 1.2
+  float2: 1e+10
+  boolean: true
+  nullval: null
+  date: 2018-01-01 11:12:13 #ISO 8601

@@ -1,0 +1,5 @@
+---
+users1:
+  - item1
+  - item2
+users2: [item1, item2]

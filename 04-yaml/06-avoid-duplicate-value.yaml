@@ -1,0 +1,4 @@
+---
+user:
+  email: &email my-email@email.com
+  contact: *email
