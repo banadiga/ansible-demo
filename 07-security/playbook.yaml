@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: su
+  vars_files:
+  - vars.yaml
+  vars:
+    SICRET1: sicret data from variable
+  tasks:
+    - name: Show message
+      debug: msg="Message with `{{ SICRET1 }}` and `{{ SICRET2 }}` 🔥"
