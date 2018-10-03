@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  vars:
+    variable: 'value of variable'
+  tasks:
+  - debug: msg={{variable}}
+  - debug:
+      msg: '{{variable}}'
+  - debug: msg={{variable | checksum}}
+  - debug: msg={{othervariable | default('Default value')}}

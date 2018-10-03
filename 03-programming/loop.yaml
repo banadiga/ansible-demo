@@ -1,0 +1,9 @@
+---
+- hosts: nodes
+  tasks:
+  - name: add several users
+    become: true
+    user: name={{ item }} state=present
+    loop:
+     - testuser1
+     - testuser2

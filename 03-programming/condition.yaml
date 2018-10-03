@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  vars:
+    variable: 'value of variable'
+    showchecksum: true
+  tasks:
+  - debug: msg={{variable}}
+  - debug: msg={{variable | checksum}}
+    when: showchecksum
