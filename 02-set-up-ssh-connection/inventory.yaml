@@ -1,0 +1,11 @@
+---
+#inventory.yaml
+all:
+  hosts:
+    ansible:
+  children:
+    nodes:
+      hosts:
+        node1:
+        node2:
+        node3:
