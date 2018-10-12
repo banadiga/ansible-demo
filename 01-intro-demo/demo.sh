@@ -20,3 +20,4 @@ ansible localhost -m ping
 
 # step 6 check available commands
 #ansible \tab
+#compgen -ac | grep ansible

@@ -25,6 +25,7 @@ On mac
 To set up demo env run
 
 ```bash
+vagrant box update
 vagrant up
 ```
 

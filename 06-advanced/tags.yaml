@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+  - debug: msg='message 1'
+    tags: [ 'never', 'debug' ]
+  - debug: msg='message 2'
+    tags:
+    - always

@@ -55,6 +55,7 @@ Vagrant.configure("2") do |config|
     end
     ansible.vm.provision :hello, type: :shell, run: :always do |shell|
       shell.inline = <<-SHELL
+          sudo gem install yaml-lint
           sudo apt-get -y install tree git zsh
       SHELL
     end

@@ -13,7 +13,7 @@ ansible-vault edit vars.yaml
 ansible-playbook playbook.yaml --ask-vault-pass
 
 # step 5 encrypt vars
-ansible-vault encrypt_string 'sicret data from variable' -name SICRET1
+ansible-vault encrypt_string 'sicret data from variable' --name SICRET1
 
 # step 6 replace SICRET1 and run playbook
 ansible-playbook playbook.yaml --ask-vault-pass
