@@ -21,3 +21,5 @@ ansible-playbook 06-template.yaml -i inventory.ini
 # step 6 cleanup
 rm 04-until.retry
 rm 05-blocks.retry
+rm 06-template.retry
+

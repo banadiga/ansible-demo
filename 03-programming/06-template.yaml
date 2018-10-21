@@ -3,5 +3,5 @@
   tasks:
   - name: add readme to home dir
     template:
-      src: mytemplates.j2
+      src: 06-mytemplates.j2
       dest: ~/readme

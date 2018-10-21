@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
   tasks:
-  - shell: /usr/bin/foo
+  - shell: /demo/03-programming/04-until.sh
     register: result
-    until: result.stdout.find("all systems go") != -1
+    until: result.stdout.find("done") != -1
     retries: 5
     delay: 10

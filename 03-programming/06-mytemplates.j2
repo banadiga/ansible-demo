@@ -1,2 +1,5 @@
-Host name is {{ ansible_hostname}}
-IPs {{ ansible_all_ipv4_addresses }}
+Host name is {{ ansible_hostname | default('Undefined') }}
+IPs:
+{% for item in ansible_all_ipv4_addresses %}
+  - {{ item }}
+{% endfor %}
