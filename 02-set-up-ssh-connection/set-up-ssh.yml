@@ -1,11 +1,13 @@
 ---
-- hosts: localhost
+- name: Setup ansible host
+  hosts: localhost
   tasks:
   - name: Create private/public keys
     shell: ssh-keygen -b 2048 -t rsa -f /home/vagrant/.ssh/id_rsa -q -N ""
     args:
       creates: /home/vagrant/.ssh/id_rsa
-- hosts: nodes
+- name: Setup nodes host
+  hosts: nodes
   tasks:
   - name: Copy public ssh key to remote nodes
     authorized_key:
