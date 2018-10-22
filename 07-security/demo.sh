@@ -23,3 +23,4 @@ ansible-playbook playbook.yaml --ask-vault-pass
 
 # step 8 encrypt vars
 ansible-vault decrypt vars.yaml
+
