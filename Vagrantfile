@@ -67,7 +67,7 @@ Vagrant.configure("2") do |config|
       SHELL
 
     end
-    ansible.vm.provision :chsh, type: :shell, run: :always do |shell|
+    ansible.vm.provision :chsh, type: :shell, run: :never do |shell|
       shell.inline = "chsh -s /bin/zsh vagrant"
     end
   end
