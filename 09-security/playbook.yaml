@@ -3,7 +3,7 @@
   vars_files:
   - vars.yaml
   vars:
-    SECRET: sicret data from variable
+    SECRET: secret data from variable
   tasks:
     - name: Show message
       debug: msg="Message with `{{ SECRET1 }}` and `{{ SECRET2 }}` 🔥"
