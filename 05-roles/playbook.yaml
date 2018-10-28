@@ -1,8 +1,9 @@
 ---
 - hosts: localhost
-  roles:
   tasks:
     - name: Show message
       debug: msg="My message 1"
     - name: Show message
       debug: msg="My message 2"
+  roles:
+
