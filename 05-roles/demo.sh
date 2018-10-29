@@ -12,7 +12,7 @@ tree
 ansible-playbook playbook.yml
 
 # step 4 add 3rd party role
-ansible-galaxy search apache --author=kbrebanov 
+ansible-galaxy search java --author=kbrebanov -c
 
 # step 5 add 3rd party role
 ansible-galaxy install kbrebanov.java -c
