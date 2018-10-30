@@ -1,9 +1,10 @@
 #!/bin/sh
 
 # step 1 configure
-ansible-playbook configure.yaml
+ansible-playbook 01-advanced.yaml
 
-# step 2 tags
-ansible-playbook tags.yaml
-ansible-playbook tags.yaml --tags all
-ansible-playbook tags.yaml --tags debug
+ansible-playbook 02-pre-post-tasks.yaml
+
+ansible-playbook 03-tags.yaml --list-tags
+
+ansible-playbook 03-tags.yaml --tags=job

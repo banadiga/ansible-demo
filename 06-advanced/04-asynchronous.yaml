@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+  - name: 'Sleep 15 sec'
+    command: /bin/sleep 15
+    async: 1000
+    poll: 0
+    register: sleeper
+  - name: 'Do task in parallel'
+    debug: msg="Task in parallel"
+  - name: 'Check on async task'
+    async_status:
+      jid: "{{ sleeper.ansible_job_id }}"
+    register: job_result
+    until: job_result.finished
+    retries: 6
+    delay: 3

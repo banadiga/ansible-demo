@@ -1,0 +1,13 @@
+---
+- name: Advanced demo
+  hosts: nodes
+  post_tasks:
+  - name: Post tasks
+    debug: msg='post tasks'
+  pre_tasks:
+  - name: Pre tasks
+    debug: msg='pre tasks'
+  tasks:
+  - debug: msg='timeout {{ seconds }} seconds'
+  - wait_for: timeout={{ seconds }}
+  - debug: msg='End'
